@@ -26,7 +26,16 @@ const Chefs = () => {
                 <img src={Chefteam7} />  
             </div>
         </div>
+        <div>
+            <h3>Special Offer</h3>
+            <h1>
+                GRAND ITALIANO PIZZA<br />
+                30% OFF FRIDAY ONLY
+            </h1>
+            <button id="book-button">BOOK A TABLE</button>
+        </div>
     </div>
+    
   )
 }
 

@@ -3,6 +3,7 @@ import About from './Components/Assets/About/About';
 import Chefs from './Components/Assets/Chefs/Chefs';
 import Header from './Components/Assets/Header/Header';
 import Hero from './Components/Assets/Hero/Hero';
+import Menu from './Components/Assets/Menu/Menu';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Hero />
       <About />
       <Chefs />
+      <Menu />
     </div>
   );
 }
