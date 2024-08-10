@@ -1,4 +1,10 @@
+@import '../../Assets/Variables/Variables.scss';
+
 #header {
     background-color: #000000;
     color: #FFFFFF;
+}
+
+#book-button {
+    background-color: $primary-color;
 }
