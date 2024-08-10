@@ -5,6 +5,7 @@ import GrilledSeafood from '../images/product-big-2.jpg'
 import GrilledBuffaloWings from '../images/product-big-3.jpg';
 import GrilledRibEye from '../images/product-big-4.jpg';
 import StickyGrilledChicken from '../images/product-big-5.jpg'
+import GrilledPotatoWings from '../images/product-big-6.jpg'
 
 
 
@@ -44,9 +45,9 @@ const Menu = () => {
               image: GrilledBuffaloWings, 
               description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
               ingredients: 'Chicken wings, apple cider vinegar, honey, hot sauce, garlic, black pepper, unsalted butter' },
-            { name: 'Grilled Buffalo Wings', 
+            { name: 'Grilled potatoes', 
               price: '$10.85', 
-              image: GrilledBuffaloWings, 
+              image: GrilledPotatoWings, 
               description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
               ingredients: 'Chicken wings, apple cider vinegar, honey, hot sauce, garlic, black pepper, unsalted butter' },
             { name: 'Grilled Buffalo Wings', 
