@@ -1,16 +1,43 @@
 @import '../../Assets/Variables/Variables.scss';
 
 * {
-    background-color: $primary-color;
+    background-color: #4b4b4b;
     color: $secondary-color;
+    margin: 0 auto;
 }
 
 #header {
     background-color: #000000;
     color: $secondary-color;
-        
+
+    #upper-header {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        #phone-address {
+            position: relative;
+        }
+        #facebook-bg {
+            height: 30px;
+            width: 30px;
+            background-color: $secondary-color;
+            position: relative;
+            top: 20px;
+        }
+        #facebook-bg:hover {
+            background-color: $primary-color;
+        }
+        img {
+            position: relative;
+            top: -10px;
+            height: 30px;
+            width: 30px;
+            margin: 10px;
+        }
         #book-button {
             background-color: $primary-color;
         }
+    }
 }
 

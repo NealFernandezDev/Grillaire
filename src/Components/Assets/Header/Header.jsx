@@ -10,11 +10,12 @@ const Header = () => {
   return (
     <div id='header'>
       <div id="upper-header">
-        <div>
+        <div id="phone-address">
           <p>2900 Lapeer Rd, Port Hurons, MI 49070 +1 
             (800) 478-42-51</p>
         </div>
         <div id ="social-icons">
+          <div id="facebook-bg"></div>
           <img src={Facebook} alt="Facebook"/>
           <img src={Twitter} alt="Twitter"/>
           <img src={Instagram} alt="Instagram"/>
