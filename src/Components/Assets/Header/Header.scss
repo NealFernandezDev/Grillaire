@@ -1,42 +1,92 @@
 @import '../../Assets/Variables/Variables.scss';
 
 * {
-    background-color: #4b4b4b;
+    background-color: #000000;
     color: $secondary-color;
     margin: 0 auto;
 }
 
+// Address, Phone Number, and Social Media icons
+
 #header {
     background-color: #000000;
     color: $secondary-color;
-
+    width: 100%;
     #upper-header {
         position: relative;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        #phone-address {
-            position: relative;
-        }
-        #facebook-bg {
-            height: 30px;
-            width: 30px;
-            background-color: $secondary-color;
-            position: relative;
-            top: 20px;
-        }
-        #facebook-bg:hover {
-            background-color: $primary-color;
-        }
-        img {
-            position: relative;
-            top: -10px;
-            height: 30px;
-            width: 30px;
-            margin: 10px;
-        }
-        #book-button {
-            background-color: $primary-color;
+        height: 70px;
+        border-bottom: #ffffff 1px solid;
+            #phone-address {
+                position: relative;
+                top: 6px;
+                left: 2px;
+            }
+                #phone-address p {
+                    position: relative;
+                    top: -10px;
+                    left: 25px;
+                    font-size: 17px;
+                }
+                #phone {
+                    position: relative;
+                    top: 2px;
+                    margin-right: 8px;
+                    margin-left: 10px;
+                    height: 16px;
+                }
+            #social-icons {
+                position: relative;
+                left: -28px;
+            }
+            #social1 {
+                position: relative;
+                height: 16px;
+                width: 16px;
+                margin: 3px;
+            }
+            #social {
+                position: relative;
+                top: 2px;
+                height: 27px;
+                width: 27px;
+            }
+            #book-button {
+                background-color: $primary-color;
+            }
+    }
+
+    // Logo, navigation links and "Book A Table" Button
+
+    #lower-header {
+        position: relative;
+        top: 15px;
+        left: 112px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 70px;
+
+        #navigation {
+            nav {
+                ul {
+                    position: relative;
+                    left: 39px;
+                    list-style: none;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    width: 400px;
+
+                    li {
+                        a {
+                            font-weight: 900;
+                        }
+                    }
+                }
+            }
         }
     }
 }
