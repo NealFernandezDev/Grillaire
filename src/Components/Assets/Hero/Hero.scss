@@ -1,0 +1,55 @@
+@import '../../Assets/Variables/Variables.scss';
+
+// ID of Hero Container
+#hero {
+    
+    // ID of Hero Text Container
+    #hero-text {
+        h1{
+            position: relative;
+            top: 98px;
+            left: 353px;
+            font-size: 89px;
+        }
+    }
+
+    // ID of Hero Icon Containers
+    #hero-containers {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 197px;
+
+        // ID of Icon Containers
+        #chef-container, #recipe-book-container, 
+        #ice-bucket-container, #location-container {
+            position: relative;
+            top: 50px;
+            width: 291px;
+            height: 175px;
+            display: flex;
+            flex-direction: column;
+            background-color: $primary-color;
+            border-radius: 3px;
+            margin-right: 3px;
+            margin-left: 3px;
+
+            // ID of Icons
+            #chef-icon, #recipe-book-icon, 
+            #ice-bucket-icon, #location-icon {
+                position: relative;
+                top: 32px;
+            }
+
+            // ID of Icon Text
+            #chef-text, #recipe-book-text, 
+            #ice-bucket-text, #location-text {
+                position: relative;
+                top: 54px;
+                color: #000000;
+                font-size: 20px;
+            }
+        }
+    }
+
+}

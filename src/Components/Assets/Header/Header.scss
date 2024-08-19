@@ -1,91 +1,147 @@
 @import '../../Assets/Variables/Variables.scss';
 
 * {
-    background-color: #000000;
-    color: $secondary-color;
     margin: 0 auto;
 }
 
 // Address, Phone Number, and Social Media icons
-
+// Top and Bottom halves of header
 #header {
-    background-color: #000000;
     color: $secondary-color;
     width: 100%;
+    
+    // Top half of header
     #upper-header {
+        background: none;
         position: relative;
         display: flex;
         justify-content: space-between;
         align-items: center;
         height: 70px;
-        border-bottom: #ffffff 1px solid;
+        border-bottom: #808182 1px solid;
+        
+
+        // Address & Phone Number Container
             #phone-address {
                 position: relative;
-                top: 6px;
-                left: 2px;
-            }
+                left: 15px;
+                
+                // Address & Phone Number
                 #phone-address p {
+                    
                     position: relative;
                     top: -10px;
                     left: 25px;
-                    font-size: 17px;
+                    font-size: 30px;
                 }
+
+                // ID of Location and Phone Icon
                 #phone {
                     position: relative;
                     top: 2px;
                     margin-right: 8px;
                     margin-left: 10px;
-                    height: 16px;
+                    height: 18px;
+                    width: 18px;
                 }
+            }
+                
+            // Social Media Icons Container
             #social-icons {
                 position: relative;
-                left: -28px;
-            }
-            #social1 {
-                position: relative;
-                height: 16px;
-                width: 16px;
-                margin: 3px;
-            }
-            #social {
-                position: relative;
-                top: 2px;
-                height: 27px;
-                width: 27px;
-            }
-            #book-button {
-                background-color: $primary-color;
-            }
-    }
+                left: -30px;
 
-    // Logo, navigation links and "Book A Table" Button
+                // ID of Facebook and Twitter Icons
+                #social1 {
+                    position: relative;
+                    height: 16px;
+                    width: 16px;
+                    margin: 3px;
+                }
 
+                // ID of Instagram and Youtube Icons
+                #social {
+                    position: relative;
+                    top: 2px;
+                    height: 27px;
+                    width: 27px;
+                }
+            }  
+        }
+
+    // Logo, Navigation Links and "Book A Table" Button
+    // Bottom half of header
     #lower-header {
         position: relative;
         top: 15px;
-        left: 112px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         height: 70px;
+        width: 100%;
+        
+        // ID of Logo Container
+        #logo {
+            position: relative;
+            left: 169px;
+            height: 70px;
+        }
 
+        // ID of Navigation Links
         #navigation {
+            position: relative;
+            left: 177px;
             nav {
                 ul {
                     position: relative;
-                    left: 39px;
+                    left: 0px;
                     list-style: none;
                     display: flex;
                     justify-content: space-around;
                     align-items: center;
                     width: 400px;
-
                     li {
                         a {
                             font-weight: 900;
+                            text-decoration: none;
+                            color: $secondary-color;
+                        }
+                        a:hover {
+                            color: $primary-color;
                         }
                     }
                 }
+            }
+        }
+        
+        // ID of "Book A Table" Container
+        #book-button-container {
+            display: flex;
+            position: relative;
+            left: -170px;
+            
+            // ID of "Book A Table" Button
+            #book-button {
+                position: relative;
+                left: 0px;
+                background-color: $primary-color;
+                height: 55px;
+                width: 157px;
+                border-radius: 3px;
+                border: $primary-color 1px solid;
+                font-weight: bold;
+                font-size: 15px;
+                a {
+                    text-decoration: none;
+                    color: #000000;
+                }
+            }
+
+            // ID of "Book A Table" Button Hover
+            #book-button a:hover {
+                cursor: pointer;
+                color: $secondary-color;
+                transition: color 0.7s ease;
             }
         }
     }
