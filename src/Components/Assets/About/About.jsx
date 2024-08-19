@@ -1,39 +1,54 @@
 import React from 'react'
-
+import './About.scss'
+import Signature from '../images/signature.png'
+import AboutBig from '../images/about-big.png'
+import AboutSmall from '../images/about-small.jpg'
 const About = () => {
   return (
     <div id="about">
         <div id="about-text">
-            <h4>Few words about us </h4>
+            <h4>Few words about us <div id="line"></div></h4>
             <h1>ABOUT US</h1>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae repellendus <br />
-                enim velit consequatur nemo, porro inventore dignissimos, atque laboriosam aspernatur <br />
-                eum deleniti sit explicabo culpa, voluptas saepe. Voluptates, exercitationem, est. <br />
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae repellendus 
+                enim velit consequatur nemo, porro inventore dignissimos, atque laboriosam aspernatur 
+                eum deleniti sit explicabo culpa, voluptas saepe. Voluptates, exercitationem, est. 
                 <br />
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae repellendus enim <br />
-                velit consequatur nemo, porro inventore dignissimos, atque laboriosam aspernatur eum <br />
-                deleniti sit explicabo culpa, voluptas saepe. Voluptates, exercitationem, est. <br />
                 <br />
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae repellendus <br />
-                enim velit consequatur nemo, porro inventore dignissimos, atque laboriosam aspernatur <br />
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae repellendus enim 
+                velit consequatur nemo, porro inventore dignissimos, atque laboriosam aspernatur eum 
+                deleniti sit explicabo culpa, voluptas saepe. Voluptates, exercitationem, est. 
+                <br />
+                <br />
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae repellendus 
+                enim velit consequatur nemo, porro inventore dignissimos, atque laboriosam aspernatur 
                 eum deleniti sit explicabo culpa, voluptas saepe. Voluptates, exercitationem, est.
             </p>
-            <img />
+            <img src={Signature} alt="Signature"/>
         </div>
         <div id="about-stats">
-            <div>
+            <div id="visitors">
                 <h1>150+</h1>
                 <h4>VISITORS DAILY</h4>
             </div>
-            <div>
+            <div id='feedback'>
                 <h1>100%</h1>
                 <h4>POSITIVE FEEDBACK</h4>
             </div>
-            <div>
+            <div id="awards">
                 <h1>25+</h1>
                 <h4>AWARDS</h4>
             </div>
+        </div>
+        <div id="about-images">
+            <div id="big-container">
+                <img id="big" src={AboutBig} alt="About Big"/>
+            </div> 
+            <div id="small-container">
+                <div id="small-background"></div>
+                <img id="small" src={AboutSmall} alt="About Small"/>
+            </div>
+                       
         </div>
     </div>
   )

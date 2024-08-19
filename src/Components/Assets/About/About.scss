@@ -2,8 +2,139 @@
 
 // ID of About Container
 #about {
-    position: relative;
-    top: 0px;
-    left: 0px;
+    display: flex;
+    width: 100%;   
+    
+    // ID of About Text Container
+    #about-text {
+        position: relative;
+        top: 407px;
+        left: 300px;
+        height: 600px;
+        width: 550px;
 
+        // H4 of About Text Container
+        h4 {
+            font-family: 'Cedarville Cursive', cursive;
+            font-size: 22px;
+            color: $primary-color;
+            
+            // ID of Line by H4
+            #line {
+              position: relative;
+              top: -20px;
+              left: -5px;
+              border-bottom: 1px solid $primary-color;
+              width: 50px;
+            }
+        }
+          
+        // H1 for About Text Container
+        h1 {
+            font-size: 45px;
+            font-weight: 900;
+            margin-bottom: 40px;
+        }
+
+        // P for About Text Container
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 1.5em;
+            text-align: left;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        // About Signature
+        img {
+            position: relative;
+            top: 6px;
+        }
+    }
+
+    // ID of About Stats Container
+    #about-stats {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        top: 1055px;
+        left: -360px;
+        height: 120px;
+        width: 600px;
+
+            // ID of Visitors, Feedback, and Awards
+            #visitors { 
+                position: relative;
+                left: -10px;
+                @include stats($primary-color);
+            }
+
+            #feedback {
+                position: relative;
+                left: -35px;
+                @include stats($primary-color);
+            } 
+            
+            #awards {
+                position: relative;
+                left: -40px;
+                @include stats($primary-color);
+            }
+    }
+
+    // ID of About Images Container
+    #about-images {
+        position: relative;
+        top: 323px;
+        left: -450px;
+        height: 545px;
+        width: 400px;
+
+        // ID of About Small Image Container (Chef)
+        #small-container {
+            position: relative;
+            top: -900px;
+            height: 545px;
+            width: 400px;
+
+            // ID of About Small Image Background
+            #small-background {
+                position: relative;
+                top: 170px;
+                left: 44px;
+                height: 564px;
+                width: 420px;
+                background-color: $secondary-color;
+                opacity: 0.5;
+            }
+
+            // ID of About Small Image (Chef)
+            #small {
+                position: relative;
+                top: -385px;
+                left: 54px;
+                height: 546px;
+                width: 400px;
+            }
+
+            
+        }
+        
+        // ID of About Large Image Container (Potatoes)
+        #big-container {
+            position: relative;
+            top: 0px;
+            left: 254px;
+            
+            // ID of About Large Image (Potatoes)
+            #big {
+                position: relative;
+                width: 590px;
+            }
+        }
+    }
 }

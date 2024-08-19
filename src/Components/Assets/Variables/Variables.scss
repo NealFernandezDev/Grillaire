@@ -1,2 +1,40 @@
 $primary-color: #ffc107;
 $secondary-color: #ffffff;
+
+ 
+@mixin headerTitleTextStyles($primary-color) {
+    h4 {
+      font-family: 'Cedarville Cursive', cursive;
+      font-size: 22px;
+      color: $primary-color;
+  
+      #line {
+        position: relative;
+        top: -20px;
+        left: -685px;
+        border-bottom: 1px solid $primary-color;
+        width: 50px;
+      }
+    }
+  
+    h1 {
+      font-size: 45px;
+      font-weight: 900;
+      margin-bottom: 40px;
+    }
+  }
+
+@mixin stats($primary-color) {
+    h1 {
+        font-size: 50px;
+        color: $primary-color;
+        
+    }
+
+    h4 {
+        position: relative;
+        top: 10px;
+        font-size: 14px;
+        color: $primary-color;
+    }
+}

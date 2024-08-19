@@ -17,11 +17,11 @@ function App() {
       <Hero />
       <About />
       <Chefs />
-      <Menu />
+      {/*<Menu />
       <Reservation />
       <Gallery />
       <Testimonial />
-      <Address />
+      <Address />*/}
     </div>
   );
 }
