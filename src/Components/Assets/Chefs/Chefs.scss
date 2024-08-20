@@ -1,0 +1,100 @@
+@import '../../Assets/Variables/Variables.scss';
+
+// ID of Chefs Container
+#chefs-container {
+    display: flex;
+    width: 100%;
+    position: relative;
+    top: 700px;
+
+    // ID of Chef Text Container
+    #chefs-text {
+        @include headerTitleTextStyles($primary-color);
+    }
+
+    // ID of Chef Images Container
+    #chefs-images {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        position: relative;
+        top: 30px;
+    }
+
+    #chefs-carousel {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        overflow: hidden;
+        position: relative;
+        animation: slide-left 20s infinite linear;
+    
+        .chef-item {
+          position: relative;
+          overflow: hidden;
+          cursor: pointer;
+    
+          img {
+            width: 100%;
+            transition: transform 0.5s ease, filter 0.5s ease;
+          }
+    
+          .chef-info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            text-align: left;
+            transform: translateY(100%);
+            transition: transform 0.5s ease;
+            color: white;
+    
+            h2 {
+              font-family: 'Cedarville Cursive', cursive;
+              font-size: 24px;
+              margin-bottom: 5px;
+            }
+    
+            p {
+              font-family: 'Cinzel', serif;
+              font-size: 18px;
+            }
+    
+            .social-icons {
+              margin-top: 10px;
+    
+              a {
+                margin-right: 10px;
+                color: white;
+                text-decoration: none;
+                font-family: 'Space Mono', monospace;
+                font-size: 16px;
+                transition: color 0.3s ease;
+    
+                &:hover {
+                  color: $primary-color;
+                }
+              }
+            }
+          }
+    
+          &:hover {
+            img {
+              transform: scale(1.1);
+              filter: brightness(0.7);
+            }
+    
+            .chef-info {
+              transform: translateY(0);
+            }
+          }
+        }
+      }
+    }
+    
+    @keyframes rotate-left {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
