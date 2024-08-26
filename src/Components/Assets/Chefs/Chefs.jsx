@@ -58,25 +58,9 @@ const Chefs = () => {
   return (
     <div id="chefs-container">
         <div id="chefs-text">
-            <p>Meet Our Chefs</p>
+            <h4>Meet Our Chefs<div id="line"></div></h4>
             <h1>OUR CHEFS</h1>
         </div>
-        {/*
-        <div id="chefs-images">
-            <div id="chef1">
-                <img src={Chefteam1} /> 
-            </div>
-            <div id="chef3">
-                <img src={Chefteam3} /> 
-            </div>
-            <div id="chef6">
-                <img src={Chefteam6} /> 
-            </div>
-            <div id="chef7">
-                <img src={Chefteam7} />  
-            </div>
-        </div>
-        */}
         <div id="chefs-carousel">
         {chefsData.map(chef => (
           <div className="chef-item" key={chef.id}>
@@ -92,9 +76,9 @@ const Chefs = () => {
             </div>
           </div>
         ))}
-      </div>
-        <div>
-            <h3>Special Offer</h3>
+        </div>
+        <div id="special-offer">
+            <h4>Special Offer<div id="line"></div></h4>
             <h1>
                 GRAND ITALIANO PIZZA<br />
                 30% OFF FRIDAY ONLY
