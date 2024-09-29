@@ -15,32 +15,32 @@ const Menu = () => {
 
     const menuItems = {
         STEAK: [
-            { name: 'Grilled Pork Chips', 
+            { name: 'GRILLED PORK CHIPS', 
               price: '$20.50', 
               image: GrilledPork, 
               description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.', 
               ingredients: 'Bone-in pork chops, honey, red pepper, cumin, apple cider vinegar, vegetable oil' },
-            { name: 'Grilled Seafood Platter', 
+            { name: 'GRILLED SEAFOOD PLATTER', 
               price: '$18.30', 
               image: GrilledSeafood, 
               description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
               ingredients: 'Lobster tails, sea scallops, shrimps, smoked paprika, thyme, parsley, mint, capers, chili pepper' },
-            { name: 'Grilled Buffalo Wings', 
+            { name: 'GRILLED BUFFALO WINGS', 
               price: '$10.85', 
               image: GrilledBuffaloWings, 
               description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
               ingredients: 'Chicken wings, apple cider vinegar, honey, hot sauce, garlic, black pepper, unsalted butter' },
-            { name: 'Grilled Ribbed Eye Steak', 
+            { name: 'GRRILLED RIB EYA STEAK', 
               price: '$13.45', 
               image: GrilledRibEye, 
               description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
               ingredients: 'Bone-in rib eye chop, olive oil, French butte, lemon juice, parsley, romaine lettuce' },
-            { name: 'Sticky Grilled Chicken', 
+            { name: 'STICKY GRILLED CHICKEN', 
               price: '$14.75', 
               image: StickyGrilledChicken, 
               description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
               ingredients: 'Chicken drumsticks, soy sauce, honey, green onion, garlic, vegetable oil, sesame seeds' },
-              { name: 'Grilled potatoes', 
+              { name: 'GRILLED POTATO', 
                 price: '$8.30', 
                 image: GrilledPotatoWings, 
                 description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
@@ -149,8 +149,12 @@ const Menu = () => {
             <img src={item.image} alt={item.name} className="menu-item-image" />
             <div className="menu-item-details">
               <span className="item-name">{item.name}</span>
-              <span className="item-description">{item.description}</span>
+              <br />
               <span className="item-price">{item.price}</span>
+              <br />
+              <span className="item-description">{item.description}</span>
+              <br />
+              <span className="item-ingredients">{item.ingredients}</span>
             </div>
           </div>
         ));

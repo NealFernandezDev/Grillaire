@@ -61,13 +61,21 @@
   }
 
   .menu-items {
-    
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: #ff0000 1px solid;
+    width: 1200px;
 
     .menu-item {
-      
+      position: relative;
+      width: 575px;
+      height: 150px;
+      border: #00ff37 1px solid;
 
       &:hover {
-        
+        font-style: none;
       }
 
       .menu-item-image {
@@ -76,17 +84,38 @@
       }
 
       .menu-item-details {
+        position: relative;
+        top: -130px;
+        left: 70px;
+        width: 415px;
+        border: #0011ff 1px solid;
+
         .item-name {
           position: relative;
-          top: -20px;
+          font-family: "Oswald", sans-serif;
+          border: $primary-color 1px solid;
         }
 
         .item-description {
-          
+          position: relative;
+          font-family: 'Open Sans', sans-serif;
+          border: $primary-color 1px solid;
         }
 
         .item-price {
-          
+          position: relative;
+          top: -23px;
+          left: 350px;
+          font-family: "Oswald", sans-serif;
+          border: $primary-color 1px solid;
+        }
+
+        .item-ingredients {
+          position: relative;
+
+          color: $primary-color;
+          font-family: "Dancing Script", system-ui;
+          border: $primary-color 1px solid;
         }
       }
     }
