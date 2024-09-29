@@ -151,8 +151,8 @@
         // ID of Line by H4
         #line {
           position: relative;
-          top: -20px;
-          left: -120px;
+          top: -13px;
+          left: -149px;
           border-bottom: 1px solid $primary-color;
           width: 50px;
         }
@@ -178,6 +178,8 @@
         border: $primary-color 1px solid;
         font-weight: bold;
         font-size: 15px;
+        font-family: "Oswald", sans-serif;
+
         a {
             text-decoration: none;
             color: #000000;
