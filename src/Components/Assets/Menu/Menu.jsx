@@ -156,23 +156,23 @@ const Menu = () => {
         ));
     };
   return (
-    <div>
-        <div>
-            <p>Our Menu</p>
-            <h1>MENU</h1>
-        </div>
-        <div className="menu-buttons">
-            <button onClick={() => setSelectedCategory('STEAK')}>STEAK</button>
-            <button onClick={() => setSelectedCategory('RIBS')}>RIBS</button>
-            <button onClick={() => setSelectedCategory('SAUSAGE')}>SAUSAGE</button>
-            <button onClick={() => setSelectedCategory('CHICKEN')}>CHICKEN</button>
-            <button onClick={() => setSelectedCategory('DESSERTS')}>DESSERTS</button>
-            <button onClick={() => setSelectedCategory('DRINKS')}>DRINKS</button>
-        </div>
-        <div className="menu-items">
-            {renderMenuItems()}
-        </div>
+    <div className="menu-container">
+      <div className="menu-title">
+        <h4>Our Menu<div id="line"></div></h4>
+        <h1>MENU</h1>
+      </div>
+      <div className="menu-buttons">
+        <button className={selectedCategory === 'STEAK' ? 'active' : ''} onClick={() => setSelectedCategory('STEAK')}>STEAK</button>
+        <button className={selectedCategory === 'RIBS' ? 'active' : ''} onClick={() => setSelectedCategory('RIBS')}>RIBS</button>
+        <button className={selectedCategory === 'SAUSAGE' ? 'active' : ''} onClick={() => setSelectedCategory('SAUSAGE')}>SAUSAGE</button>
+        <button className={selectedCategory === 'CHICKEN' ? 'active' : ''} onClick={() => setSelectedCategory('CHICKEN')}>CHICKEN</button>
+        <button className={selectedCategory === 'DESSERTS' ? 'active' : ''} onClick={() => setSelectedCategory('DESSERTS')}>DESSERTS</button>
+        <button className={selectedCategory === 'DRINKS' ? 'active' : ''} onClick={() => setSelectedCategory('DRINKS')}>DRINKS</button>
+      </div>
+      <div className="menu-items">
+        {renderMenuItems()}
     </div>
+  </div>
   )
 }
 

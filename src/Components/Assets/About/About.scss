@@ -15,7 +15,7 @@
 
         // H4 of About Text Container
         h4 {
-            font-family: 'Cedarville Cursive', cursive;
+            font-family: "Dancing Script", system-ui;
             font-size: 22px;
             color: $primary-color;
             
@@ -29,8 +29,9 @@
             }
         }
           
-        // H1 for About Text Container
+        // H1 for "ABOUT US" Text
         h1 {
+            font-family: "Oswald", sans-serif;
             font-size: 45px;
             font-weight: 900;
             margin-bottom: 40px;
@@ -38,6 +39,7 @@
 
         // P for About Text Container
         p {
+            font-family: 'Open Sans', sans-serif;
             font-size: 16px;
             line-height: 1.6;
             margin-bottom: 1.5em;
@@ -71,18 +73,45 @@
                 position: relative;
                 left: -10px;
                 @include stats($primary-color);
+
+                h1 {
+                    font-family: "Oswald", sans-serif;
+                }
+
+                p {
+                    font-family: 'Open Sans', sans-serif;
+                    color: $primary-color;
+                }
             }
 
             #feedback {
                 position: relative;
                 left: -35px;
                 @include stats($primary-color);
+
+                h1 {
+                    font-family: "Oswald", sans-serif;
+                }
+
+                p {
+                    font-family: 'Open Sans', sans-serif;
+                    color: $primary-color;
+                }
             } 
             
             #awards {
                 position: relative;
                 left: -40px;
                 @include stats($primary-color);
+                
+                h1 {
+                    font-family: "Oswald", sans-serif;
+                }
+
+                p {
+                    font-family: 'Open Sans', sans-serif;
+                    color: $primary-color;
+                }
             }
     }
 

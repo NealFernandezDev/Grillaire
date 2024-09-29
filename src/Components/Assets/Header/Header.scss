@@ -28,10 +28,11 @@
                 
                 // Address & Phone Number
                 #phone-address p {
+                    font-family: 'Open Sans', sans-serif;
                     position: relative;
                     top: -10px;
                     left: 25px;
-                    font-size: 30px;
+                    font-size: 35px;
                 }
 
                 // ID of Location and Phone Icon
@@ -101,6 +102,7 @@
                     width: 400px;
                     li {
                         a {
+                            font-family: "Oswald", sans-serif;
                             font-weight: 900;
                             text-decoration: none;
                             color: $secondary-color;
@@ -130,6 +132,7 @@
                 border: $primary-color 1px solid;
                 font-weight: bold;
                 font-size: 15px;
+                font-family: "Oswald", sans-serif;
                 a {
                     text-decoration: none;
                     color: #000000;

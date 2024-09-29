@@ -15,23 +15,26 @@
         height: 110px;
         width: 500px;
         
+        // H4 of Chef Text Container (Meet Our Chefs)
         h4 {
-          font-family: 'Cedarville Cursive', cursive;
+          font-family: "Dancing Script", system-ui;
           font-size: 22px;
           color: $primary-color;
-      
+
+          // ID of Line by H4
           #line {
             position: relative;
             top: -20px;
-            left: 40px;
+            left: 65px;
             border-bottom: 1px solid $primary-color;
             width: 50px;
           }
         }
-      
+        
+        // H1 for Chef Text Container (Our Chefs)
         h1 {
+          font-family: "Oswald", sans-serif;
           position: relative;
-          
           font-size: 45px;
           font-weight: 900;
           margin-bottom: 40px;
@@ -54,11 +57,11 @@
     
       
       &:hover {
-        animation-play-state: paused; // Pause animation on hover
+        animation-play-state: paused;
       }
     
       .chef-item {
-        min-width: 300px; // Set the width of each item
+        min-width: 300px;
         position: relative;
         overflow: hidden;
         cursor: pointer;
@@ -135,30 +138,57 @@
     #special-offer {
       position: relative;
       top: 650px;
-      left: -500px;
+      left: -904px;
       height: 250px;
       width: 1000px;
-      border: $primary-color 1px solid;
 
+      // H4 of Offer Container (Special Offer)
       h4 {
-        font-family: 'Cedarville Cursive', cursive;
+        font-family: "Dancing Script", system-ui;
         font-size: 22px;
         color: $primary-color;
-    
+        
+        // ID of Line by H4
         #line {
           position: relative;
           top: -20px;
-          left: 40px;
+          left: -120px;
           border-bottom: 1px solid $primary-color;
           width: 50px;
         }
       }
-    
+      
+      // H1 for Offer Container (Grand Italiano Pizza)
       h1 {
+        font-family: "Oswald", sans-serif;
         position: relative;
         font-size: 45px;
         font-weight: 900;
         margin-bottom: 40px;
       }
+
+    // ID of "Book A Table" Button
+      button {
+        position: relative;
+        left: 0px;
+        background-color: $primary-color;
+        height: 55px;
+        width: 157px;
+        border-radius: 3px;
+        border: $primary-color 1px solid;
+        font-weight: bold;
+        font-size: 15px;
+        a {
+            text-decoration: none;
+            color: #000000;
+        }
+    }
+
+    // ID of "Book A Table" Button Hover
+    button a:hover {
+        cursor: pointer;
+        color: $secondary-color;
+        transition: color 0.7s ease;
     }
   }
+}

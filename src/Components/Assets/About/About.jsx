@@ -29,15 +29,15 @@ const About = () => {
         <div id="about-stats">
             <div id="visitors">
                 <h1>150+</h1>
-                <h4>VISITORS DAILY</h4>
+                <p>VISITORS DAILY</p>
             </div>
             <div id='feedback'>
                 <h1>100%</h1>
-                <h4>POSITIVE FEEDBACK</h4>
+                <p>POSITIVE FEEDBACK</p>
             </div>
             <div id="awards">
                 <h1>25+</h1>
-                <h4>AWARDS</h4>
+                <p>AWARDS</p>
             </div>
         </div>
         <div id="about-images">

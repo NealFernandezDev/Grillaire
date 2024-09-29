@@ -17,8 +17,8 @@ function App() {
       <Hero />
       <About />
       <Chefs />
-      {/*<Menu />
-      <Reservation />
+      <Menu />
+      {/*<Reservation />
       <Gallery />
       <Testimonial />
       <Address />*/}
