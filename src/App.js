@@ -18,8 +18,8 @@ function App() {
       <About />
       <Chefs />
       <Menu />
-      {/*<Reservation />
-      <Gallery />
+      <Reservation />
+      {/*<Gallery />
       <Testimonial />
       <Address />*/}
     </div>
