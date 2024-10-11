@@ -37,6 +37,28 @@ const Reservation = () => {
           <Calendar onDateSelect={handleDateSelect} />
         </div>
         <div className="form-group">
+          <label htmlFor="guests">Guests</label>
+          <input
+            type="number"
+            id="guests"
+            name="guests"
+            value={formData.guests}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="time">Time</label>
+          <input
+            type="time"
+            id="time"
+            name="time"
+            value={formData.time}
+            onChange={handleChange}
+            required
+          />  
+        </div>
+        <div className="form-group">
           <label htmlFor="name">Name</label>
           <input
             type="text"
@@ -65,28 +87,6 @@ const Reservation = () => {
             id="phone"
             name="phone"
             value={formData.phone}
-            onChange={handleChange}
-            required
-          />
-        </div>
-        <div className="form-group">
-          <label htmlFor="time">Time</label>
-          <input
-            type="time"
-            id="time"
-            name="time"
-            value={formData.time}
-            onChange={handleChange}
-            required
-          />  
-        </div>
-        <div className="form-group">
-          <label htmlFor="guests">Guests</label>
-          <input
-            type="number"
-            id="guests"
-            name="guests"
-            value={formData.guests}
             onChange={handleChange}
             required
           />
